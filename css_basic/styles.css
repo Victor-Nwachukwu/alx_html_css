@@ -2,8 +2,15 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid;
+    background-color: skyblue;
+    
 }
 
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
 main {
     display: flex;
     flex-direction: row;
@@ -14,6 +21,7 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+   
 }
 
 aside {
