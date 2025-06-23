@@ -1,0 +1,98 @@
+/*CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main CSS */
+.header {
+    position: absolute;
+    left: 0;
+    top: 26px;
+    width: 100%;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar_link {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar_logo {
+    height: 30px;
+}
+
+.navbar_link:hover {
+    color: rgb(204, 73, 73);
+}
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    background-image: url(images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 300px;
+}
+
+.hero-banner {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 200px;
+}
+
+.hero-banner_title1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.hero-banner_title2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*font-size: 18px; */
+    color: #fff;
+}
+
+.btn {
+    display: block;
+    margin: 18px auto 0px auto;
+    background-color: rgb(204, 73, 73);
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.hero-banner_para {
+    color: #fff;
+    margin-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+}
