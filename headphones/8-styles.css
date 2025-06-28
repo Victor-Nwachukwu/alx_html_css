@@ -1,0 +1,708 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/SourceSansPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SpinCycle';
+    src: url('../fonts/spincycle_ot.otf') format('opentype');
+}
+
+body {
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.header {
+    background-image: url("/images/headphones_hero_1.jpg");
+    height: 100vh;
+    background-position: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.holberton_school-icon-menu {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    margin-right: 200px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.nav-links a:hover {
+    color: #FF6565;
+}
+
+.main-content {
+    text-align: center;
+    color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin-top: 10rem;
+}
+
+button {
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+    background-color: #FF6565;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(128, 42, 42);
+    opacity: 0.9;
+}
+
+.description {
+    line-height: 1.6;
+}
+
+#whatwedo {
+    background-color: #ffffff; 
+    padding-top: 100px;
+}
+
+#whatwedo p {
+    padding-top: 40px;
+}
+
+.mid-content {
+    text-align: center;
+}
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    max-width: 1400px;
+    padding: auto;
+    gap: 58px;
+    position: relative;
+}
+
+.icon-sound {
+    text-align: center;
+}
+
+.holberton_school-icon-ic_sound {
+    font-size: 100px;
+    color: #FF6565;
+}
+
+.icon-video {
+    text-align: center;
+}
+
+.holberton_school-icon-ic_video {
+    font-size: 100px;
+    color: #FF6565;
+}
+
+.icon-music {
+    text-align: center;
+}
+
+.holberton_school-icon-ic_music {
+    font-size: 100px;
+    color: #FF6565;
+}
+
+.icon-hearing {
+    text-align: center;
+}
+
+.holberton_school-icon-ic_hearing {
+    font-size: 100px;
+    color: #FF6565;
+}
+
+.ourresults {
+    background-image: url("/images/headphones_hero_2.jpg");
+    height: 100vh;
+    background-position: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.results {
+    max-width: 1400px;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+.results h2 {
+    padding-bottom: 40px;
+    font-size: 32px;
+}
+
+.results p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.pentagone {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    margin: 0 auto;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.png1 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    position: relative;
+}
+
+.png2 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    position: relative;
+}
+
+.png3 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    position: relative;
+}
+
+.png4 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    position: relative;
+}
+
+.png1 img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.png2 img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.png3 img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.png4 img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.overlay-text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 0.5rem;
+    padding-top: 70px;
+}
+
+.overlay-text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 0.5rem;
+    padding-top: 70px;
+}
+
+.overlay-text3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 0.5rem;
+    padding-top: 70px;
+}
+
+.overlay-text4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.overlay4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 0.5rem;
+    padding-top: 70px;
+}
+
+.contactus {
+    background-color: white;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.contact-heading {
+    padding-bottom: 50px;
+    color: #071629;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form label {
+    padding-right: 410px;
+    color: #071629;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: none;
+    border-bottom: 1px solid #071629;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+.contact-form button {
+    background: #FF6565;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: o.75rem 1rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: auto;
+    align-self: center;
+}
+
+.contact-form button:hover {
+  background: rgb(128, 42, 42);
+}
+
+footer {
+    background-color: #071629;
+    height: 250px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.footer-section img {
+    width: 160px
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 60px;
+    color: gray;
+}
+
+/*======================
+  HEADER (NAV + HERO)
+=======================*/
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem;
+    margin-right: 0;
+  }
+
+  .holberton_school-icon-menu {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+ .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(7, 22, 41, 0.95);
+    position: absolute;
+    top: 60px; /* below the nav */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .main-content {
+    margin-top: 6rem;
+    padding: 0 1rem;
+  }
+
+  .main-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .main-content p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  /*======================
+  WHAT WE DO SECTION
+=======================*/
+
+  .icon-section {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .holberton_school-icon-ic_sound,
+  .holberton_school-icon-ic_video,
+  .holberton_school-icon-ic_music,
+  .holberton_school-icon-ic_hearing {
+    font-size: 70px;
+  }
+
+  /*======================
+  OUR RESULTS SECTION
+=======================*/
+
+ .results {
+    padding-top: 60px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .ourresults {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .results h2 {
+    font-size: 1.4rem;
+  }
+
+  .results p {
+    font-size: 0.9rem;
+  }
+
+  .pentagone {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+  }
+
+  .png1,
+  .png2,
+  .png3,
+  .png4 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .png1 img,
+  .png2 img,
+  .png3 img,
+  .png4 img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .overlay-text1,
+  .overlay-text2,
+  .overlay-text3,
+  .overlay-text4 {
+    font-size: 1.2rem;
+  }
+
+  .overlay1,
+  .overlay2,
+  .overlay3,
+  .overlay4 {
+    font-size: 0.5rem;
+    padding-top: 50px;
+  }
+
+  
+/*======================
+  CONTACT US SECTION
+=======================*/
+
+ .contactus {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .contact-heading {
+    font-size: 1.4rem;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .contact-form label {
+    padding-right: 0;
+}
+
+
+/*======================
+  FOOTER
+=======================*/
+
+ .footer-section {
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 1.5rem;
+ }
+
+ .footer-section img {
+    width: 120px;
+ }
+
+ .socials {
+    gap: 1rem;
+ }
+}
+
+/* ==============
+  ANIMATIONS KEYFRAMES
+============== */
+
+/* Fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade up */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ==============
+  WHAT WE DO SECTION
+============== */
+
+/* Fade in the heading and paragraph */
+#whatwedo .mid-content {
+  animation: fadeIn 2s ease forwards;
+}
+
+/* Slide up all icons */
+.icon-section > div {
+  animation: slideUp 1.5s ease forwards;
+}
+
+/* Stagger the icons */
+.icon-section > div:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.icon-section > div:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.icon-section > div:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.icon-section > div:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+
+/* ==============
+  OUR RESULTS SECTION
+============== */
+
+/* Fade up heading and text */
+.ourresults .results {
+  animation: fadeUp 2s ease forwards;
+}
+
+/* Fade up each pentagon */
+.pentagone > div {
+  animation: fadeUp 1.5s ease forwards;
+}
+
+/* Stagger pentagons */
+.pentagone > div:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.pentagone > div:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.pentagone > div:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.pentagone > div:nth-child(4) {
+  animation-delay: 1.2s;
+}
