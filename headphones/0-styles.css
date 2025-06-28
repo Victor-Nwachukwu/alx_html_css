@@ -1,98 +1,163 @@
-/*CSS Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Main CSS */
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/SourceSansPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SpinCycle';
+    src: url('../fonts/spincycle_ot.otf') format('opentype');
+}
+
+body {
+    font-family: 'SourceSansPro', sans-serif;
+}
+
 .header {
-    position: absolute;
-    left: 0;
-    top: 26px;
-    width: 100%;
+    background-image: url("/images/headphones_hero_1.jpg");
+    height: 100vh;
+    background-position: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.holberton_school-icon-menu {
+    display: none;
+    color: white;
+    cursor: pointer;
 }
 
 .navbar {
-    width: 80%;
-    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    margin-right: 200px;
 }
 
-.navbar_menu {
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
     list-style: none;
-    display: flex;
-    gap: 20px;
+    padding-top: 10px;
 }
 
-.navbar_link {
+.nav-links a {
     text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
+    color: white;
+    font-size: 0.7rem;
 }
 
-.navbar_logo {
-    height: 30px;
+.nav-links a:hover {
+    color: #FF6565;
 }
 
-.navbar_link:hover {
-    color: rgb(204, 73, 73);
-}
-/* Hero Section */
-.hero-section {
-    width: 100%;
-    background-image: url(images/headphones_hero_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 300px;
-}
-
-.hero-banner {
-    width: 100%;
-    margin: auto;
+.main-content {
     text-align: center;
-    line-height: 20px;
-    padding-top: 200px;
+    color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin-top: 10rem;
 }
 
-.hero-banner_title1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    color: #fff;
-}
-
-.hero-banner_title2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /*font-size: 18px; */
-    color: #fff;
-}
-
-.btn {
-    display: block;
-    margin: 18px auto 0px auto;
-    background-color: rgb(204, 73, 73);
+button {
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+    background-color: #FF6565;
+    padding: 15px 20px;
     border: none;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 300;
-    padding: 15px 30px;
     border-radius: 30px;
-    cursor: pointer;
-    margin-top: 30px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
 }
 
-.hero-banner_para {
-    color: #fff;
-    margin-top: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 100;
-    font-size: 12px;
+button:hover {
+    background-color: rgb(128, 42, 42);
+    opacity: 0.9;
+}
+
+.description {
+    line-height: 1.6;
+}
+
+/*======================
+  HEADER (NAV + HERO)
+=======================*/
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem;
+    margin-right: 0;
+  }
+
+  .holberton_school-icon-menu {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+ .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(7, 22, 41, 0.95);
+    position: absolute;
+    top: 60px; /* below the nav */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .main-content {
+    margin-top: 6rem;
+    padding: 0 1rem;
+  }
+
+  .main-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .main-content p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
 }

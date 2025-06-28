@@ -1,88 +1,53 @@
-# 🎨 PixelPerfect Web Page (Pure HTML & CSS)
+# 🎧 Responsive Headphones Landing Page
 
-A fully functional, accessible, and responsive web page built **entirely from scratch**, using only **HTML** and **CSS** — no libraries, no frameworks, no shortcuts.
+A modern, responsive landing page for a headphones or audio product website. Built using HTML and CSS, the layout adapts smoothly to desktop, tablet, and mobile screens.
 
-The objective: Recreate a web page to match a provided **designer file** with pixel-perfect precision.
-
----
-
-## 🚀 Project Objective
-
-This project is an exercise in **fundamentals** — showcasing mastery in:
-
-- Semantic HTML structure
-- Modern, clean CSS layout
-- Responsive design for all screen sizes
-- Accessibility best practices (WCAG compliance)
-- Attention to detail to match a Figma/Sketch/Adobe XD design 1:1
+## 🌐 Live Demo
+[View Live Site](#) <!-- Replace with your live link or GitHub Pages URL -->
 
 ---
 
-## 🛠️ Built With
+## 📌 Features
 
-- ✅ **HTML5** – Clean, semantic markup
-- ✅ **CSS3** – Custom styling using Flexbox, Grid, and media queries
-- ✅ **Accessibility (a11y)** – ARIA roles, color contrast, keyboard navigation, and semantic tags
-- ✅ **Responsive Design** – Mobile-first approach with breakpoints for tablets and desktops
-
----
-
-## 📸 Preview
-
-> _“What you see is exactly what the designer intended.”_
-
-![Design Match Preview](./preview.png)
+- ✅ Fully responsive layout (mobile-first)
+- ✅ Switches to mobile view at screen widths ≤ 480px
+- ✅ Styled navigation, hero section, features, stats, and footer
+- ✅ Smooth hover/active states for links and buttons
+- ✅ Clean UI with consistent spacing and layout
+- ✅ Uses `max-width: 1000px` centered content
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Tech Stack
 
-
----
-
-## 🔍 Features
-
-- 🌐 Fully semantic HTML structure
-- 📱 Mobile-first and fully responsive layout
-- 🎨 Consistent spacing, typography, and alignment
-- 🧑‍🦯 Accessible with keyboard and screen reader support
-- 💡 No external libraries or frameworks
-- 📏 Exact match with designer specs (using Figma/XD inspection mode)
+- HTML5
+- CSS3 (Flexbox & Media Queries)
 
 ---
 
-## ✅ How to Use
+## 📱 Responsive Breakpoints
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/pixelperfect-html-css.git
-   cd pixelperfect-html-css
+| Device         | Width               | Layout     |
+|----------------|---------------------|------------|
+| Mobile         | ≤ 480px             | Vertical stack, full-width |
+| Tablet         | 481px – 1024px      | Medium layout |
+| Desktop        | ≥ 1025px            | Full layout with side-by-side sections |
 
-🧪 Responsiveness
-This web page was tested on:
+---
 
-✅ Desktop (1440px and above)
+## 🎨 Style Highlights
 
-✅ Tablet (768px–1024px)
+- **Link hover/active color:** `#FF6565`
+- **Button hover/active:** `opacity: 0.9`
+- **Content max-width:** `1000px`, centered on the page
 
-✅ Mobile (up to 480px)
+---
 
-Use dev tools or resize your browser to test responsiveness.
+## 📷 Preview
 
-📌 Lessons Learned
-"If you can build it from scratch, you can build it with anything."
+<img src="preview-desktop.png" alt="Desktop layout preview" width="400"/>
+<img src="preview-mobile.png" alt="Mobile layout preview" width="200"/>
 
-Deepened understanding of layout techniques with Flexbox and Grid
+---
 
-Strengthened ability to follow design systems and match UI precisely
-
-Gained hands-on practice with a11y standards and responsive workflows
-
-
-🧱 Future Improvements
-Add simple animations or transitions
-
-Integrate with JavaScript for interactivity (optional)
-
-Build a theme switcher (light/dark mode)
 

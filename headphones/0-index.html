@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>First Complete Website</title>
-    <link rel="stylesheet" href="0-styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <a href="0-index.html"
-          ><img
-            src="images/logo_headphones.png"
-            alt="headphone logo"
-            class="navbar_logo"
-        /></a>
-        <ul class="navbar_menu">
-          <li class="navbar_item">
-            <a href="#" class="navbar_link">what we do</a>
-          </li>
-          <li class="navbar_item">
-            <a href="#" class="navbar_link">our results</a>
-          </li>
-          <li class="navbar_item">
-            <a href="#" class="navbar_link">contact us</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+    
+    <!-- Main site stylesheet -->
+    <link rel="stylesheet" href="1-styles.css">
+    
+    <!-- Holberton icon styles (compiled SCSS as CSS) -->
+    <link rel="stylesheet" href="holberton_school-icon/style.css">
 
-    <main class="main">
-      <section class="hero-section">
-        <div class="hero-banner">
-          <h3 class="hero-banner_title1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-          </h3>
-          <h6 class="hero-banner_title2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          </h6>
-          <button class="btn">CALL TO ACTION</button>
-          <p class="hero-banner_para">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-            dolorum nesciunt eum asperiores, facere maiores sint distinctio.
-            Rerum beatae laborum at recusandae quis perferendis voluptatibus
-            eveniet laboriosam ab autem blanditiis commodi excepturi nesciunt
-            consectetur facere, voluptatum inventore sit nemo omnis ducimus
-            animi modi. Quia, autem.
-          </p>
+</head>
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <div>
+                <span id="menu-toggle" class="holberton_school-icon-menu"></span>
+            </div>
+
+            <div class="logo">
+            <img src="images/logo_headphones.png" alt="Headphones Logo">
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#whatwedo">What We Do</a></li>
+                <li><a href="#ourresults">Our Results</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <h1>Lorem ipsum dolor sit amet lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>CALL TO ACTION</button>
+                
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br>
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <br>
+                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+            </p>
         </div>
-      </section>
-    </main>
-  </body>
+    </section>
+</body>
 </html>
